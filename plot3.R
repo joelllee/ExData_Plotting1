@@ -10,5 +10,3 @@ lines(strptime(dateTime, format="%Y-%m-%d %H:%M:%S"), as.numeric(as.character(re
 lines(strptime(dateTime, format="%Y-%m-%d %H:%M:%S"), as.numeric(as.character(relevantData[,9])), col="blue", type="l", ylab="Global Active Power (kilowatts)", xlab="")
 legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, lwd=1, col=c("black","red","blue"))
 dev.off()
-
-
