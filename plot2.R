@@ -1,4 +1,4 @@
-mydata <- read.table("C:\\Users\\Joel\\Desktop\\exdata-data-household_power_consumption\\household_power_consumption.txt", header=TRUE, sep=";")
+mydata <- read.table("household_power_consumption.txt", header=TRUE, sep=";")
 
 mydata[,1] <- as.Date(strptime(mydata[,1], "%d/%m/%Y"))
 
